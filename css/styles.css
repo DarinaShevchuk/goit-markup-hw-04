@@ -108,7 +108,7 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
   cursor: pointer;
 }
 .link:hover,
@@ -447,6 +447,8 @@ Clients */
 }
 
 .label {
+  margin-bottom: 10px;
+
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -468,4 +470,33 @@ Clients */
 }
 .adress-map {
   margin-bottom: 9px;
+}
+.send-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+.button-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+
+  min-width: 200px;
+  border-radius: 4px;
+
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--font-text-color);
+  background-color: var(--button-color);
+
+  cursor: pointer;
+}
+.button-send:hover,
+.button-send:focus {
+  color: var(--primary-white-color);
 }
