@@ -114,29 +114,22 @@ img {
   color: var(--primary-text-color);
   cursor: pointer;
 }
-.contact-nav .link:hover,
-.contact-nav .linkfocus {
+
+.icon-contact {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.link:hover,
+.linkfocus {
   color: var(--button-color);
   fill: var(--button-color);
 }
 
-.icon-contact {
-  width: 16px;
-  height: 11px;
-  margin-right: 10px;
-  fill: var(--primary-text-color);
-}
-/* так ховерится, но поотдельности */
-/* .icon-contact:hover,
+.icon-contact:hover,
 .icon-contact:focus {
   fill: var(--button-color);
-} */
-
-/* так не ховерится вообще, почему? */
-/* .link:hover,
-.link:focus > .icon-contact {
-  fill: var(--button-color);
-} */
+}
 
 .sub {
   font-weight: 400;
