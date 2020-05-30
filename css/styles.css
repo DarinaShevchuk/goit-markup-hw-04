@@ -7,6 +7,7 @@
   --secondary-bgr-color: #f5f4fa;
   --link-bgr-color: rgba(47, 48, 58, 0.8);
   --footer-bgr-color: #2f303a;
+  --icons-color: #afb1b8;
 }
 body {
   background-color: var(--primary-white-color);
@@ -86,6 +87,11 @@ img {
   cursor: pointer;
 }
 
+.main-nav .link:hover,
+.main-nav .link:focus {
+  color: var(--button-color);
+}
+
 .main-nav {
   display: flex;
   margin-left: 86px;
@@ -119,10 +125,12 @@ img {
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
-.contact-nav .link:hover {
+.contact-nav .link:hover,
+.contact-nav .link:focus {
   color: var(--button-color);
 }
-.contact-nav .link:hover > .icon-contact {
+.contact-nav .link:hover > .icon-contact,
+.contact-nav .link:focus > .icon-contact {
   fill: var(--button-color);
 }
 
@@ -199,7 +207,6 @@ img {
 
 .features .title {
   margin: 0;
-  padding-top: 30px;
   padding-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
@@ -211,6 +218,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+
+  height: 120px;
+  background-color: var(--secondary-bgr-color);
 }
 /* Work list */
 
@@ -304,6 +315,22 @@ img {
 .social {
   display: flex;
   justify-content: center;
+  padding-bottom: 24px;
+}
+
+.icon-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icons-color);
+}
+.icon-social:hover,
+.icon-social:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--button-color);
 }
 
 /* 
@@ -311,6 +338,8 @@ Clients */
 
 .clients {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .clients .item {
   max-width: 170px;
@@ -321,9 +350,20 @@ Clients */
   margin-left: 30px;
 }
 
-.clients .item:hover,
-.clients .item:focus {
-  background-color: var(--button-color);
+.clients-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  min-width: 170px;
+  fill: var(--icons-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--button-color);
+  border-color: var(--button-color);
 }
 
 /* Portfolio */
@@ -515,4 +555,28 @@ Clients */
 }
 .button-send:hover > .send-icon {
   fill: var(--button-color);
+}
+
+.social-footer {
+  display: flex;
+  justify-content: center;
+}
+.social-footer .link-footer-social + .link-footer-social {
+  margin-left: 10px;
+}
+.icon-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--primary-white-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-footer:hover,
+.icon-footer:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--button-color);
 }
