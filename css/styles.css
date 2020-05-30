@@ -105,16 +105,38 @@ img {
 }
 
 .contact-nav .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   cursor: pointer;
 }
-.link:hover,
-.link:focus {
+.contact-nav .link:hover,
+.contact-nav .linkfocus {
   color: var(--button-color);
+  fill: var(--button-color);
 }
+
+.icon-contact {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+/* так ховерится, но поотдельности */
+/* .icon-contact:hover,
+.icon-contact:focus {
+  fill: var(--button-color);
+} */
+
+/* так не ховерится вообще, почему? */
+/* .link:hover,
+.link:focus > .icon-contact {
+  fill: var(--button-color);
+} */
 
 .sub {
   font-weight: 400;
@@ -283,7 +305,8 @@ img {
 }
 .button:hover,
 .button:focus {
-  color: var(--primary-white-color);
+  background-color: var(--primary-white-color);
+  color: var(--button-color);
 }
 
 .social {
@@ -335,7 +358,8 @@ Clients */
 }
 .button-secondary:hover,
 .button-secondary:focus {
-  color: var(--button-color);
+  background-color: var(--button-color);
+  color: var(--primary-white-color);
 }
 
 .button-flex {
@@ -346,11 +370,6 @@ Clients */
 
 .button-flex .item + .item {
   margin-left: 8px;
-}
-
-.button-secondary:hover,
-.button-secondary:focus {
-  color: var(--button-color);
 }
 
 .examples {
@@ -475,6 +494,7 @@ Clients */
   width: 24px;
   height: 24px;
   margin-left: 10px;
+  fill: var(--primary-white-color);
 }
 .button-send {
   display: flex;
@@ -498,5 +518,9 @@ Clients */
 }
 .button-send:hover,
 .button-send:focus {
-  color: var(--primary-white-color);
+  background-color: var(--primary-white-color);
+  color: var(--button-color);
+}
+.button-send:hover > .send-icon {
+  fill: var(--button-color);
 }
